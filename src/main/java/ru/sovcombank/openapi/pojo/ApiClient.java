@@ -2,12 +2,13 @@ package ru.sovcombank.openapi.pojo;
 
 import org.springframework.data.annotation.Id;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by rurik on 02/03/17.
  */
-public class ApiClient {
+public class ApiClient implements Serializable {
 
     @Id
     private String id;
