@@ -10,11 +10,7 @@ import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
-import ru.sovcombank.openapi.pojo.ApiClient;
 import ru.sovcombank.openapi.repositories.ApiClientRepository;
-
-import java.util.ArrayList;
-import java.util.Random;
 
 @EnableCaching
 @SpringBootApplication
@@ -42,19 +38,19 @@ public class SpringMongodbWithCacheApplication implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        ArrayList urls = new ArrayList<String>();
-        urls.add("/api1");
-        Random randomazer = new Random();
-        for (int i = 0; i < 100; i++) {
-            int random = randomazer.nextInt();
-            String id = "id" + random;
-            repository.save(new ApiClient(id, "asa", urls));
-            System.out.println(repository.findAll().size());
-            Thread.currentThread().sleep(400);
-        }
-
-        repository.resetApiClientCache();
-        System.out.println(repository.findAll().size());
+//        ArrayList urls = new ArrayList<String>();
+//        urls.add("/api1");
+//        Random randomazer = new Random();
+//        for (int i = 0; i < 100; i++) {
+//            int random = randomazer.nextInt();
+//            String id = "id" + random;
+//            repository.save(new ApiClient(id, "asa", urls));
+//            System.out.println(repository.findAll().size());
+//            Thread.currentThread().sleep(400);
+//        }
+//
+//        repository.resetApiClientCache();
+//        System.out.println(repository.findAll().size());
     }
 
 }
