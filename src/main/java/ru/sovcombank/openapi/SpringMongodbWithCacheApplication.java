@@ -46,7 +46,7 @@ public class SpringMongodbWithCacheApplication implements CommandLineRunner {
 //            String id = "id" + random;
 //            repository.save(new ApiClient(id, "asa", urls));
 //            System.out.println(repository.findAll().size());
-//            Thread.currentThread().sleep(400);
+////            Thread.currentThread().sleep(400);
 //        }
 //
 //        repository.resetApiClientCache();

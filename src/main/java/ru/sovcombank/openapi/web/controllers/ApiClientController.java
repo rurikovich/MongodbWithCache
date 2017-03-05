@@ -25,7 +25,7 @@ public class ApiClientController {
     }
 
     @RequestMapping("/apiclient")
-    public ApiClient apiClient(@RequestParam(value = "id", defaultValue = "id0") String id) {
+    public ApiClient apiClient(@RequestParam(value = "id", defaultValue = "id-96046550") String id) {
         return apiClientRepository.findById(id);
     }
 }
