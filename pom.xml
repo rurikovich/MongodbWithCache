@@ -67,6 +67,13 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>ui</directory>
+                <targetPath>static</targetPath>
+            </resource>
+        </resources>
     </build>
 
 

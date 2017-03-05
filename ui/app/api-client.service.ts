@@ -18,7 +18,7 @@ export class ApiClientService {
     }
 
     fetchFirstApiClient(){
-        let data = this.http.get('http://localhost:8080/apiclient');
+        let data = this.http.get('/apiclient');
         return data;
     }
 
